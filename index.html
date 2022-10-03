@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attendence portal</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<style>
+body {
+  background-image: url('C:\\Users\\DELL\\Documents\\webpages2\\attendence portal2\\img1.jpg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h2{
+  color:whitesmoke;
+  font-size:60px;
+}
+</style>
+  </style>
+<body>
+ 
+
+<h2>ATTENDENCE LOGIN FORM</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="C:\Users\DELL\Documents\webpages2\attendence portal2\img.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>USERNAME:</b></label>
+      <input type="text" placeholder="ENTER USERNAME" name="name" required id="USERNAME">
+
+      <label for="pwd"><b>PASSWORD:</b></label>
+      <input type="PASSWORD" placeholder="ENTER PASSWORD" name="pwd" required id="PASSWORD">
+        
+      <button type="button" class="btn btn-primary" onclick="validate()">Submit</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="pass"><a href="#">FORGET PASSWORD?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+
+function validate() {
+    var uname = document.getElementById("USERNAME").value;
+    var pwd = document.getElementById("PASSWORD").value;
+
+    if (uname == "neeraj@123#$" && pwd == "segattirius")
+    {
+        window.location = "index1.html";
+    }
+    else
+    {
+        alert("Invalid Username or Password!")
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+

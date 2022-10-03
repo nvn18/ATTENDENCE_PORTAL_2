@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        student basic
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+  background-image: url('C:\\Users\\DELL\\Documents\\webpages2\\attendence portal2\\img7.jpg');
+  background-size: 100% 100%;
+}
+    </style>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <h2>ENTER THE DETAILS TO SUBMIT</h2>
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>student id</label>
+                        <input type="text" name="id" id="id">
+                    </div>
+                    <div>
+                        <label>email-id</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>attendence</label>
+                        <input type="text" name="att" id="att">
+                    </div>
+                    <div>
+                        <label>mobileno</label>
+                        <input type="tel" name="mb" id="mb">
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <h2> STUDENT DETAILS</h2>
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>student-id</th>
+                            <th>email-id</th>
+                            <th>attendence</th>
+                            <th>mobileno</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
